@@ -44,6 +44,13 @@ async function run() {
     });
 
     //update user
+
+    /* 
+        to update user we can do in two method PUT and PATCH 
+        put: when we don't know that data is present. If not present put creates autometically one. 
+        patch: only updates data when data is present. 
+
+    */
     app.get("/users/:id", async (req, res) => {
       const id = req.params.id;
 
